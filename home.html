@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROPIX</title>
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script type="module" src="js/script.js" defer></script> -->
+</head>
+
+<body>
+    <!-- introductory header -->
+    <header class="site-header">
+        <div class="container">
+            <!-- logo and title-->
+            <div class="header-content">
+                <img src="images/logo-ss.png" alt ="Cropix logo" class="logo">
+                <h1 class="site-title">Rice Leaf Disease Detection</h1>
+            </div>
+            <!-- calendar -->
+            <div class="calendar">
+                <span class="material-icons">calendar_month</span>
+                <input type="date" id="date-display" class="date-input" value="2026-06-20">
+                <span class="material-icons">expand_more</span>
+            </div>
+        </div>
+    </header>
+    <!-- hero image -->
+    <div class="hero-container">
+        <img src="images/hero-image.png" alt="An image of farmers working in a rice field" class="hero-image">
+        <a href="https://www.eco-business.com/news/from-farmers-to-importers-how-filipino-rice-growing-went-wrong/" class="hero-link">https://www.eco-business.com/news/from-farmers-to-importers-how-filipino-rice-growing-went-wrong/</a>
+    </div>
+
+    <!-- main content -->
+    <main class="main-content-wrapper">
+        <section class="main-content">
+            <!-- about the website -->
+            <div class="about-card">
+                <div class="about-text">
+                    <h2>About this Website</h2>
+                    <p>This website serves as the official digital platform and deployment interface for a software project that provides an accessible, high-precision tool for rapid crop health assessment.</p>
+                </div>
+                <div class="about-action">
+                    <button class="show-more-btn">Show more
+                        <span class="material-icons">arrow_circle_down</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- instructions and photo upload -->
+            <div class="content-grid">
+                <!-- instructions -->
+                <div class="instructions-card">
+                    <h2>How to Use</h2>
+                    <ol>
+                        <li>Prepare a rice leaf image.</li>
+                        <li>Select or update the date using the calendar icon above to match when the image was taken.</li>
+                        <li>Drag and drop the image or click <i>Choose file</i> to upload.</li>
+                        <li>Upload one image at a time.</li>
+                        <li>The disease protection and confidence score will be displayed automatically.</li>
+                        <li>Click the <span class="material-icons info-icon">info</span> icon for more information about the results.</li>
+                        <li>To analyze another image, simply repeat the steps aboved</li>
+                    </ol>
+                </div>
+
+                <!-- photo upload -->
+                <div class="upload-card">
+                    <h2>Photo Upload</h2>
+                    <div class="upload-box">
+                        <span class="material-icons upload-icon">cloud_upload</span>
+                        <p>Drag and Drop files here</p>
+                        <p>or</p>
+                        <button class="upload-btn">
+                            Choose file
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- results -->
+        <!-- <section class="results">
+
+        </section> -->
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>Contact Us</h2>
+                <p onclick="window.scrollTo({top:0, behavior: 'smooth'});">Back to Top</p>
+            </div>
+
+            <div class="footer-right">
+                <img src="images/logo-name-ss.png" alt="Logo with name" class="footer-img">
+                <p class="copyright">All rights reserved 2026</p>
+
+                <div class="footer-links">
+                    <a href="#">Advertisement</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Visitor Agreement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

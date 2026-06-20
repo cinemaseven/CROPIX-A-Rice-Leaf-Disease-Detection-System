@@ -1,0 +1,305 @@
+/* === STYLE GUIDE === */
+:root {
+    /* === COLOR PALETTE === */
+    --base: #FFFFF4;
+    --primary: #6E782E;
+    --secondary: #25429C;
+    --accent1: #37471D;
+    --accent2: #D7DAE3;
+    --text-color1: #000000;
+    --text-color2: #FFFFFF;
+
+    /* === TYPOGRAPHY === */
+    --heading-font: "Kaisei HarunoUmi", serif;
+    --body-font: "Montserrat", sans-serif;
+}
+
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === BODY === */
+body {
+    background-color: var(--base);
+    font-family: var(--body-font);
+}
+
+/* === HEADER === */
+.site-header {
+    padding: 2rem 6rem 1.5rem;
+}
+
+.container {
+    width: min(2000px, 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color1);
+    font-family: var(--heading-font);
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--primary);
+    color: var(--text-color2);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.date-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--text-color2);
+    font-size: 1.2rem;
+    font-family: var(--body-font);
+    cursor: pointer;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-size: 2rem;
+}
+
+/* === HERO IMAGE === */
+.hero-container {
+    width: min(2000px, 100%);
+    margin: 0 auto;
+}
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-link {
+    display: inline-block;
+    color: var(--text-color1);
+    font-size: 0.8rem;
+    margin: 0.2rem 1rem;
+}
+
+/* === MAIN CONTENT WRAPPER === */
+.main-content-wrapper {
+    width: min(1700px, 100%);
+    margin: 0 auto;
+}
+
+/* === MAIN CONTENT === */
+.main-content {
+    margin: 3.5rem 0;
+}
+
+/* ===  ABOUT CARD === */
+.about-card {
+    background-color: var(--primary);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.50);
+    border-radius: 15px;
+    padding: 3rem;
+    color: var(--text-color2);
+    gap: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+p, ol {
+    line-height: 1.6;
+    font-size: 1.15rem;
+}
+
+.about-action {
+    display: flex;
+    align-items: flex-start;
+}
+
+.show-more-btn {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--text-color2);
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding-top: 0.2rem;
+}
+
+/* ===  INSTRUCTIONS CARD === */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.instructions-card {
+    border: 2px solid var(--text-color1);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.instructions-card h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.instructions-card ol {
+    padding-left: 1.5rem;
+}
+
+.instructions-card li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.info-icon {
+    font-size: 1.75rem;
+}
+
+/* ===  UPLOAD CARD === */
+.upload-card {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.50);
+    background-color: var(--base);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.upload-card h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.upload-box {
+    background-color: var(--accent2);
+    border: 4.5px dashed var(--secondary);
+    border-radius: 15px;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.upload-icon {
+    font-size: 5rem;
+    color: var(--secondary);
+}
+
+.upload-box p {
+    color: var(--secondary);
+    margin-top: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.upload-btn {
+    color: var(--text-color2);
+    font-size: 1.25rem;
+    background-color: var(--secondary);
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 100px;
+}
+
+/* ===  FOOTER === */
+.site-footer {
+    background: var(--accent1);
+    color: var(--text-color2);
+    padding: 2.5rem 6rem;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-left p {
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-img {
+    width: 220px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: nowrap;
+}
+
+.footer-links a {
+    font-size: 0.8rem;
+    color: var(--text-color2);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
