@@ -458,17 +458,16 @@ p, ol {
     font-family: var(--body-font);
     font-size: 1.15rem;
     line-height: 1.6;
-    opacity: 0.8;
     padding-left: 0.5rem;
 }
 
 #recommendationList li::marker {
-    color: #888;
+    color: var(--text-color1);
 }
 
 /* Disclaimer Styling */
 .disclaimer {
-    color: var(--secondary);
+    color: var(--text-color1);
     font-style: italic;
     font-family: var(--body-font);
     font-size: 1rem;
@@ -477,6 +476,7 @@ p, ol {
 }
 
 .disclaimer strong {
+    color: var(--secondary);
     font-weight: bold;
 }
 /* ===  FOOTER === */
