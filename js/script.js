@@ -98,6 +98,30 @@ document.addEventListener("DOMContentLoaded", async () => {
         gaugeContainer.style.setProperty('--fill-deg', (score / 100) * 180 + 'deg');
     }
 
+    // === ABOUT CARD TOGGLE FUNCTIONALITY ===
+    const toggleAboutBtn = document.getElementById("toggleAboutBtn");
+    const extendedAboutText = document.getElementById("extendedAboutText");
+
+    if (toggleAboutBtn && extendedAboutText) {
+        toggleAboutBtn.addEventListener("click", () => {
+            const isHidden = extendedAboutText.style.display === "none";
+            
+            const textSpan = toggleAboutBtn.querySelector(".btn-text");
+            const iconNode = toggleAboutBtn.querySelector(".material-icons");
+
+            if (isHidden) {
+                extendedAboutText.style.display = "flex";
+                if (textSpan) textSpan.textContent = "Show less";
+                if (iconNode) iconNode.textContent = "arrow_circle_up";
+            } else {
+                extendedAboutText.style.display = "none";
+                if (textSpan) textSpan.textContent = "Show more";
+                if (iconNode) iconNode.textContent = "arrow_circle_down";
+            }
+        });
+    }
+
+    // === PHOTO UPLOAD HANDLERS ===
     if (customBtn) {
         customBtn.addEventListener("click", () => fileInput.click());
     }

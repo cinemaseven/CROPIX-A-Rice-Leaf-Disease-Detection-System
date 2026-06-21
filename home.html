@@ -45,15 +45,24 @@
     <main class="main-content-wrapper">
         <section class="main-content">
             <!-- about the website -->
-            <div class="about-card">
-                <div class="about-text">
-                    <h2>About this Website</h2>
-                    <p>This website serves as the official digital platform and deployment interface for a software project that provides an accessible, high-precision tool for rapid crop health assessment.</p>
+            <div class="about-container" id="aboutCard">
+                <div class="about-card-top">
+                    <div class="about-text">
+                        <h2>About this Website</h2>
+                        <p>This website serves as the official digital platform and deployment interface for a software project that provides an accessible, high-precision tool for rapid crop health assessment.</p>
+                    </div>
+                    <div class="about-action">
+                        <button class="show-more-btn" id="toggleAboutBtn">
+                            <span class="btn-text">Show more</span>
+                            <span class="material-icons">arrow_circle_down</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="about-action">
-                    <button class="show-more-btn">Show more
-                        <span class="material-icons">arrow_circle_down</span>
-                    </button>
+                
+                <div class="about-card-bottom" id="extendedAboutText" style="display: none;">
+                    <p>This website serves as the official digital platform and deployment interface for the software project titled "Rice Leaf Disease Detection Using EfficientNet-Based Convolutional Neural Network with Multi-Metric Performance Evaluation." Developed by computer science researchers at Holy Angel University, this web application directly bridges the gap between complex deep learning models and practical agricultural management.</p>
+                    <p>The platform provides an accessible, high-precision tool for rapid crop health assessment by leveraging a fine-tuned EfficientNet Convolutional Neural Network (CNN) architecture. Users can seamlessly upload images of symptomatic rice leaves directly through the web interface to receive real-time predictions with confidence scores along with comprehensive multi-metric evaluations—including k-fold cross-validation, confusion matrices, precision, recall, F1-Score, and ROC AUC analysis.</p>
+                    <p>The underlying system is engineered to detect critical rice leaf diseases early, empowering agricultural communities to mitigate threats before they compromise seasonal crop yields. Ultimately, this user-centric platform stands as a dedicated technological solution aimed at modernizing crop protection, supporting sustainable farming practices, and contributing to food security.</p>
                 </div>
             </div>
 
